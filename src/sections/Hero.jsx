@@ -8,43 +8,6 @@ import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
 
 const Hero = () => {
-    const controls = useControls("CodingRoom", {
-        positionX: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        positionY: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        positionZ: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        rotationX: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        rotationY: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        rotationZ: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        scale: {
-            value: 1,
-            min: 0.1,
-            max: 10
-        }
-    });
     const isSmall = useMediaQuery({ maxWidth: 440});
     const isMobile = useMediaQuery({ maxWidth: 768});
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024});
@@ -58,7 +21,6 @@ const Hero = () => {
                     Developer with many hats!</p>
             </div>
             <div className="w-full h-full absolute inset-0">
-                <Leva/>
 
                 <Canvas className="w-full h-full">
                     <Suspense fallback={<CanvasLoader />}>
