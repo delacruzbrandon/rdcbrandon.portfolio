@@ -8,6 +8,9 @@ import {calculateSizes} from "../constants/index.js";
 import {Target} from "../components/Target.jsx";
 import {ReactLogo} from "../components/ReactLogo.jsx";
 import {AndroidLogo} from "../components/AndroidLogo.jsx";
+import Cube from "../components/Cube.jsx";
+import HeroCamera from "../components/HeroCamera.jsx";
+import Button from "../components/Button.jsx";
 
 const Hero = () => {
     const isSmall = useMediaQuery({ maxWidth: 440});
@@ -28,20 +31,30 @@ const Hero = () => {
                     <Suspense fallback={<CanvasLoader />}>
 
                     <PerspectiveCamera makeDefault position={[0, 0, 25]}/>
-                    <CodingRoom
-                        scale={sizes.deskScale}
-                        position={sizes.deskPosition}
-                        rotation={sizes.deskRotation}
-                    />
+                        <HeroCamera isMobile={isMobile}>
+                            <CodingRoom
+                                scale={sizes.deskScale}
+                                position={sizes.deskPosition}
+                                rotation={sizes.deskRotation}
+                            />
+                        </HeroCamera>
+
                         <group>
                             <Target position={sizes.targetPosition}/>
                             <ReactLogo position={sizes.reactLogoPosition}/>
-                            <AndroidLogo position={sizes.androidLogoPosition}/>
+                            <Cube position={sizes.cubePosition}/>
+                            <AndroidLogo position={sizes.androidPosition}/>
                         </group>
                         <ambientLight intensity={1}/>
                         <directionalLight position={[10, 10, 10]} intensity={0.5}/>
                     </Suspense>
                 </Canvas>
+            </div>
+
+            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+                <a href="#contact" className={"w-fit"}>
+                    <Button name="Let's get in touch!" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
+                </a>
             </div>
             </section>
     )

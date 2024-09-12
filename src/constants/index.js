@@ -248,13 +248,14 @@ export const myProjects = [
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
-        deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.1,
+        deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.08,
         deskPosition: isMobile ? [0.5, -Math.PI, 0] : [1.3, -4.7, -3.5],
-        deskRotation: [-3.1, -0.1, -Math.PI],
+        deskRotation: [-2.9, 0, -Math.PI],
         cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-        reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [14, 3, 0],
+        reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [10, 6, 0],
         androidLogoPosition: isSmall ? [-3, 4, 0] : isMobile ? [-5, 4, 0] : isTablet ? [-5, 4, 0] : [-14, 3, 0],
         ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
+        androidPosition: isSmall ? [-5, 7, 0] : isMobile ? [-6, 6, 0] : isTablet ? [-12, 10, 0] : [-12, 6, 0],
         targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
     };
 };
