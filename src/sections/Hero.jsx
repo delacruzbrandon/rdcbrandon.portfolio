@@ -1,11 +1,13 @@
 import React, {Suspense} from 'react'
 import {Canvas} from "@react-three/fiber";
-import {PerspectiveCamera, SpotLight} from "@react-three/drei";
+import {PerspectiveCamera} from "@react-three/drei";
 import CodingRoom from "../components/CodingRoom.jsx";
 import CanvasLoader from "../components/CanvasLoader.jsx";
-import {Leva, useControls} from "leva";
 import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
+import {Target} from "../components/Target.jsx";
+import {ReactLogo} from "../components/ReactLogo.jsx";
+import {AndroidLogo} from "../components/AndroidLogo.jsx";
 
 const Hero = () => {
     const isSmall = useMediaQuery({ maxWidth: 440});
@@ -16,22 +18,26 @@ const Hero = () => {
         <section className="min-h-screen w-full flex-col relative ">
             <div className="w-full mx-auto flex-col sm:mt-36 mt-20 c-space gap-3">
                 <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
-                    Hello, my name's Brandon! <span className="waving-hand">👋</span></p>
+                    Welcome! <span className="waving-hand">👋</span></p>
                 <p className="hero_tag text-gray_gradient">
-                    Developer with many hats!</p>
+                    I'm a Developer with many hats.</p>
             </div>
             <div className="w-full h-full absolute inset-0">
-
+                {/*<Leva />*/}
                 <Canvas className="w-full h-full">
                     <Suspense fallback={<CanvasLoader />}>
 
-                    <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
+                    <PerspectiveCamera makeDefault position={[0, 0, 25]}/>
                     <CodingRoom
                         scale={sizes.deskScale}
                         position={sizes.deskPosition}
-                        // position={[0.7, -Math.PI, -2.9]}
-                        rotation={[-2.5, -0.1, -3.1]}
+                        rotation={sizes.deskRotation}
                     />
+                        <group>
+                            <Target position={sizes.targetPosition}/>
+                            <ReactLogo position={sizes.reactLogoPosition}/>
+                            <AndroidLogo position={sizes.androidLogoPosition}/>
+                        </group>
                         <ambientLight intensity={1}/>
                         <directionalLight position={[10, 10, 10]} intensity={0.5}/>
                     </Suspense>
