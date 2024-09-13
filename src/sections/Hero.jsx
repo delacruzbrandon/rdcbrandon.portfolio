@@ -21,7 +21,7 @@ const Hero = () => {
         <section className="min-h-screen w-full flex-col relative ">
             <div className="w-full mx-auto flex-col sm:mt-36 mt-20 c-space gap-3">
                 <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
-                    Welcome! <span className="waving-hand">👋</span></p>
+                    Welcome! Feel free to snoop around<span className="waving-hand">👋</span></p>
                 <p className="hero_tag text-gray_gradient">
                     I'm a Developer with many hats.</p>
             </div>
