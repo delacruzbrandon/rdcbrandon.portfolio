@@ -21,11 +21,13 @@ export const About = () => {
         }, 2000)
     }
     return (
-        <section className="c-space my-20">
+        <section className="c-space my-20" id={'about'}>
+            <p className={"head-text"}>About Me</p>
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <div className={"col-span-1 xl:row-span-3"}>
                     <div className={"grid-container"}>
-                        <img src={"/assets/grid1.png"} alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain"/>
+                        <img src={"/assets/grid1.png"} alt="grid-1"
+                             className="w-full sm:h-[276px] h-fit object-contain"/>
                         <div>
                             <p className={"grid-headtext"}>Hello, I'm Brandon</p>
                             <p className={"grid-subtext"}>
@@ -55,24 +57,25 @@ export const About = () => {
                     <div className={"grid-container"}>
                         <div className={"rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center"}>
                             <Globe
-                            height={326}
-                            width={326}
-                            backgroundColor={"rgba(0, 0, 0, 0)"}
-                            showGraticules
-                            globeImageUrl={"//unpkg.com/three-globe/example/img/earth-day.jpg"}
-                            labelsData={[{
-                                lat:latitude,
-                                lng:longitude,
-                                text:"I'm here!",
-                                color:"white",
-                                size:20
-                            }]}
-                            pointsData={gData}
+                                height={326}
+                                width={326}
+                                backgroundColor={"rgba(0, 0, 0, 0)"}
+                                showGraticules
+                                globeImageUrl={"//unpkg.com/three-globe/example/img/earth-day.jpg"}
+                                labelsData={[{
+                                    lat: latitude,
+                                    lng: longitude,
+                                    text: "I'm here!",
+                                    color: "white",
+                                    size: 20
+                                }]}
+                                pointsData={gData}
                             />
                         </div>
                         <div>
                             <p className={"grid-headtext"}>Tech Nomad</p>
-                            <p className={"grid-subtext"}>While I'm based in the Philippines. Majority of my experience has been working
+                            <p className={"grid-subtext"}>While I'm based in the Philippines. Majority of my experience
+                                has been working
                                 for companies remotely.</p>
                             <Button name={"Let's Chat"} isBeam containerClass={"w-full mt-20"}/>
                         </div>
@@ -90,8 +93,9 @@ export const About = () => {
                             <p className={"grid-subtext"}>
                                 As a kid, I always loved to tinker and provide neat solutions.
                                 May it be making a mini crossbow with my RC car, or building new and inspiring ideas.
-                                And because of this curiosity, software became my gateway to expanding my horizons, outside of just regular coding.
-                                </p>
+                                And because of this curiosity, software became my gateway to expanding my horizons,
+                                outside of just regular coding.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -103,7 +107,7 @@ export const About = () => {
                         <div className={"space-y-2"}>
                             <p className={"grid-subtext text-center"}>Contact Me</p>
                             <div className={"copy-container"} onClick={handleCopy}>
-                                <img src={emailCopied ? "/assets/tick.svg" : "/assets/copy.svg"} alt={"copy"} />
+                                <img src={emailCopied ? "/assets/tick.svg" : "/assets/copy.svg"} alt={"copy"}/>
                                 <p className={"lg:text-2xl md:text-xl font-medium text-gray_gradient text-white"}>dcbrh.ph@gmail.com</p>
                             </div>
                         </div>
