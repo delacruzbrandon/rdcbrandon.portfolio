@@ -2,7 +2,10 @@ import React from 'react'
 import Navbar from "./sections/Navbar.jsx";
 import Hero from "./sections/Hero.jsx";
 import {About} from "./sections/About.jsx";
-import {Projects} from "./sections/Projects.jsx";
+import {Experiences} from "./sections/Experiences.jsx";
+import {Contact} from "./sections/Contact.jsx";
+// import {Projects} from "./sections/Projects.jsx";
+// import {Testimonies} from "./sections/Testimonies.jsx";
 
 const App = () => {
     return (
@@ -10,7 +13,10 @@ const App = () => {
             <Navbar />
             <Hero />
             <About />
-            <Projects />
+            {/*<Experiences />*/}
+            {/*<Projects />*/}
+            {/*<Testimonies />*/}
+            <Contact />
         </main>
     )
 }

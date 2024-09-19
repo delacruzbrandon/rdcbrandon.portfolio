@@ -23,7 +23,7 @@ export const About = () => {
     return (
         <section className="c-space my-20" id={'about'}>
             <p className={"head-text"}>About Me</p>
-            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full mt-12">
                 <div className={"col-span-1 xl:row-span-3"}>
                     <div className={"grid-container"}>
                         <img src={"/assets/grid1.png"} alt="grid-1"
