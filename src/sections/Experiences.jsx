@@ -25,7 +25,7 @@ export const Experiences = () => {
                                     <div className={"sm:p-5 px-2.5 py-5"}>
                                         <p className={"font-bold text-white-800"}>{name}</p>
                                         <p className={"text-sm mb-5"}>{pos} -- {duration}</p>
-                                        <pre className={"group-hover:text-white transition ease-out duration-500"}>{title}</pre>
+                                        <p className={"group-hover:text-white transition ease-out duration-500 max-w-fit"}>{title}</p>
                                     </div>
                                     <div className={"sm:p-5 px-2.5 py-5"}>
                                     </div>

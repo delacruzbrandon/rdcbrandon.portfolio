@@ -267,10 +267,10 @@ export const workExperiences = [
         pos: 'Mobile Developer',
         duration: 'Feb 2023 - Aug 2023',
         title:
-            "Develop Android and Flutter Apps using Android Studio\n" +
-            "Develop new features for RCBC Hybrid App with Flutter\n" +
-            "Daily Standups with RCBC and Diskartech Team\n" +
-            "Unit Testing with JUnit4",
+            "Develop Android and Flutter Apps using Android Studio.\n" +
+            "Develop new features for RCBC Hybrid App with Flutter.\n" +
+            "Daily Standups with RCBC and Diskartech Team.\n" +
+            "Unit Testing with JUnit4.",
         icon: '/assets/workex-6.png',
         animation: 'victory',
     },
@@ -280,10 +280,10 @@ export const workExperiences = [
         pos: 'Android Developer',
         duration: 'Jun 2022 - Dec 2022',
         title:
-            "Maintain and optimize multiple Android apps with Android Studio\n" +
-            "Fix and debug bugs issued in tickets\n" +
-            "Code reviews using BitBucket\n" +
-            "Develop different Android apps/sites with different layouts using company libraries",
+            "Maintain and optimize multiple Android apps with Android Studio.\n" +
+            "Fix and debug bugs issued in tickets.\n" +
+            "Code reviews using BitBucket.\n" +
+            "Develop different Android apps/sites with different layouts using company libraries.",
         icon: '/assets/workex-5.png',
         animation: 'clapping',
     },
@@ -293,10 +293,10 @@ export const workExperiences = [
         pos: 'Android Developer',
         duration: 'Dec 2021 - Apr 2022',
         title:
-            "Maintain and optimize multiple Android apps with Android Studio\n" +
-            "Fix and debug bugs issued in tickets\n" +
-            "Code reviews using BitBucket\n" +
-            "Develop different Android apps/sites with different layouts using company libraries",
+            "Maintain and optimize multiple Android apps with Android Studio.\n" +
+            "Fix and debug bugs issued in tickets.\n" +
+            "Code reviews using BitBucket.\n" +
+            "Develop different Android apps/sites with different layouts using company libraries.",
         icon: '/assets/workex-4.png',
         animation: 'salute',
     }, {
@@ -305,10 +305,10 @@ export const workExperiences = [
         pos: 'Android Developer',
         duration: 'May 2021 - Oct 2021',
         title:
-            "Ensuring applications are non-conflicting with multiple Android versions and devices\n" +
-            "Working within outside data sources, SDKs, and APIs\n" +
-            "Third-party integration while maintaining quality code\n" +
-            "Collaborating with a team of Android developers in designing and innovating prospect features",
+            "Ensuring applications are non-conflicting with multiple Android versions and devices.\n" +
+            "Working within outside data sources, SDKs, and APIs.\n" +
+            "Third-party integration while maintaining quality code.\n" +
+            "Collaborating with a team of Android developers in designing and innovating prospect features.",
         icon: '/assets/workex-3.png',
         animation: 'salute',
     }, {
@@ -317,10 +317,10 @@ export const workExperiences = [
         pos: 'Android Developer',
         duration: '2019 - 2020',
         title:
-            "Designing and creating refined applications compatible to the Android channel\n" +
-            "Working within outside data sources, SDKs, and APIs\n" +
-            "Stay updated with Google Play policy compliance\n" +
-            "Publish AAB file format in Google Play Console",
+            "Designing and creating refined applications compatible to the Android channel.\n" +
+            "Working within outside data sources, SDKs, and APIs.\n" +
+            "Stay updated with Google Play policy compliance.\n" +
+            "Publish AAB file format in Google Play Console.",
         icon: '/assets/workex-2.png',
         animation: 'salute',
     }, {
@@ -329,10 +329,10 @@ export const workExperiences = [
         pos: 'Freelance Android Developer',
         duration: '2019 - 2020',
         title:
-            "Development of Android Apps from scratch\n" +
-            "Design wireframe for Android Apps with Figma or AdobeXD\n" +
-            "Usability Testing for UX design according to client feedback\n" +
-            "RESTful API Integration\n",
+            "Development of Android Apps from scratch.\n" +
+            "Design wireframe for Android Apps with Figma or AdobeXD.\n" +
+            "Usability Testing for UX design according to client feedback.\n" +
+            "RESTful API Integration.",
         icon: '/assets/workex-1.png',
         animation: 'salute',
     },
