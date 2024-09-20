@@ -262,30 +262,78 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 
 export const workExperiences = [
     {
-        id: 1,
-        name: 'Framer',
-        pos: 'Lead Web Developer',
-        duration: '2022 - Present',
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-        icon: '/assets/framer.svg',
+        id: 6,
+        name: 'NextBank',
+        pos: 'Mobile Developer',
+        duration: 'Feb 2023 - Aug 2023',
+        title:
+            "Develop Android and Flutter Apps using Android Studio\n" +
+            "Develop new features for RCBC Hybrid App with Flutter\n" +
+            "Daily Standups with RCBC and Diskartech Team\n" +
+            "Unit Testing with JUnit4",
+        icon: '/assets/workex-6.png',
         animation: 'victory',
     },
     {
-        id: 2,
-        name: 'Figma',
-        pos: 'Web Developer',
-        duration: '2020 - 2022',
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-        icon: '/assets/figma.svg',
+        id: 5,
+        name: 'Cebu Pacific Airlines',
+        pos: 'Android Developer',
+        duration: 'Jun 2022 - Dec 2022',
+        title:
+            "Maintain and optimize multiple Android apps with Android Studio\n" +
+            "Fix and debug bugs issued in tickets\n" +
+            "Code reviews using BitBucket\n" +
+            "Develop different Android apps/sites with different layouts using company libraries",
+        icon: '/assets/workex-5.png',
         animation: 'clapping',
     },
     {
+        id: 4,
+        name: 'Capslock or Innovations Group',
+        pos: 'Android Developer',
+        duration: 'Dec 2021 - Apr 2022',
+        title:
+            "Maintain and optimize multiple Android apps with Android Studio\n" +
+            "Fix and debug bugs issued in tickets\n" +
+            "Code reviews using BitBucket\n" +
+            "Develop different Android apps/sites with different layouts using company libraries",
+        icon: '/assets/workex-4.png',
+        animation: 'salute',
+    }, {
         id: 3,
-        name: 'Notion',
-        pos: 'Junior Web Developer',
+        name: 'Questronix Corp.',
+        pos: 'Android Developer',
+        duration: 'May 2021 - Oct 2021',
+        title:
+            "Ensuring applications are non-conflicting with multiple Android versions and devices\n" +
+            "Working within outside data sources, SDKs, and APIs\n" +
+            "Third-party integration while maintaining quality code\n" +
+            "Collaborating with a team of Android developers in designing and innovating prospect features",
+        icon: '/assets/workex-3.png',
+        animation: 'salute',
+    }, {
+        id: 2,
+        name: 'Vertex Digital Ent.',
+        pos: 'Android Developer',
         duration: '2019 - 2020',
-        title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-        icon: '/assets/notion.svg',
+        title:
+            "Designing and creating refined applications compatible to the Android channel\n" +
+            "Working within outside data sources, SDKs, and APIs\n" +
+            "Stay updated with Google Play policy compliance\n" +
+            "Publish AAB file format in Google Play Console",
+        icon: '/assets/workex-2.png',
+        animation: 'salute',
+    }, {
+        id: 1,
+        name: 'Realified IT Services',
+        pos: 'Freelance Android Developer',
+        duration: '2019 - 2020',
+        title:
+            "Development of Android Apps from scratch\n" +
+            "Design wireframe for Android Apps with Figma or AdobeXD\n" +
+            "Usability Testing for UX design according to client feedback\n" +
+            "RESTful API Integration\n",
+        icon: '/assets/workex-1.png',
         animation: 'salute',
     },
 ];
